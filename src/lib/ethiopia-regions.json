@@ -1,0 +1,166 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": { "name": "Oromia Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [36.0, 9.0],
+              [38.0, 9.0],
+              [38.0, 8.0],
+              [36.0, 8.0],
+              [36.0, 9.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Amhara Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [37.5, 12.5],
+              [39.5, 12.5],
+              [39.5, 11.0],
+              [37.5, 11.0],
+              [37.5, 12.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Tigray Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [37.0, 14.0],
+              [39.0, 14.0],
+              [39.0, 13.0],
+              [37.0, 13.0],
+              [37.0, 14.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Somali Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [41.0, 8.5],
+              [44.0, 8.5],
+              [44.0, 5.0],
+              [41.0, 5.0],
+              [41.0, 8.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Dire Dawa" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [41.6, 9.6],
+              [42.0, 9.6],
+              [42.0, 9.3],
+              [41.6, 9.3],
+              [41.6, 9.6]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Central Ethiopia Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [38.5, 9.0],
+              [39.5, 9.0],
+              [39.5, 8.0],
+              [38.5, 8.0],
+              [38.5, 9.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Southern Ethiopia Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [36.5, 6.0],
+              [38.5, 6.0],
+              [38.5, 5.0],
+              [36.5, 5.0],
+              [36.5, 6.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Sidama Ethiopia Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [37.0, 7.5],
+              [38.5, 7.5],
+              [38.5, 6.5],
+              [37.0, 6.5],
+              [37.0, 7.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Southwest Ethiopia Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [35.5, 6.5],
+              [37.0, 6.5],
+              [37.0, 5.5],
+              [35.5, 5.5],
+              [35.5, 6.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Afar Region" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [40.0, 13.0],
+              [42.0, 13.0],
+              [42.0, 10.5],
+              [40.0, 10.5],
+              [40.0, 13.0]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+  
