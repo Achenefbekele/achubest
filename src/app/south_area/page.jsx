@@ -123,7 +123,7 @@ export default function SouthAreaPage() {
                                 
                                 <p className="text-lg">
                                     The Feed the Future Ethiopia Community Nutrition Activity in the South 
-                                    region, led by FHI 360, is part of USAID's comprehensive initiative 
+                                    region, led by FHI 360, is part of USAID&apos;s comprehensive initiative 
                                     to improve nutritional outcomes. The project focuses on strengthening 
                                     nutrition services and increasing accessibility for women, children, 
                                     and adolescent girls in the South region.
