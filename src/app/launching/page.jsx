@@ -51,7 +51,7 @@ export default function Launching() {
                     {showMore && (
                         <>
                             <p className="mt-4">
-                                He emphasized the project's role in breaking the
+                                He emphasized the project&apos;s role in breaking the
                                 intergenerational cycle of malnutrition...
                             </p>
                             <p className="mt-4">

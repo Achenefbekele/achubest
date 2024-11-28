@@ -1,5 +1,6 @@
 // app/api/auth/signin/route.js
 import { NextResponse } from 'next/server';
+import jwt from 'jsonwebtoken';
 
 export async function POST(request) {
   const { username, password } = await request.json();
@@ -10,7 +11,9 @@ export async function POST(request) {
   if (isLoginAttempt) {
     // Login credentials
     if (username === 'FHI360' && password === 'Achu4321') {
-      return NextResponse.json({ success: true });
+      // Create a JWT token
+      const token = jwt.sign({ username }, 'your-secret-key', { expiresIn: '5h' });
+      return NextResponse.json({ success: true, token });
     }
   } else {
     // File deletion password
