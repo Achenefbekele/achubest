@@ -175,62 +175,59 @@ export default function Header() {
                 >
                     KNOWLEDGE
                 </Link>
-                <button 
-                    className="text-xl font-bold hover:text-[#D03000] flex items-center gap-1 dropdown-trigger" 
-                    onClick={() => handleDropdownToggle('powerbi')}
-                >
-                    PowerBI
-                    <svg 
-                        className={`w-4 h-4 transition-transform ${activeDropdown === 'powerbi' ? 'rotate-180' : ''}`} 
-                        fill="none" 
-                        stroke="currentColor" 
-                        viewBox="0 0 24 24"
+                <div className="relative">
+                    <button 
+                        className="text-xl font-bold hover:text-[#D03000] flex items-center gap-1 dropdown-trigger" 
+                        onClick={() => handleDropdownToggle('powerbi')}
                     >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
+                        PowerBI
+                        <svg 
+                            className={`w-4 h-4 transition-transform ${activeDropdown === 'powerbi' ? 'rotate-180' : ''}`} 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    {activeDropdown === 'powerbi' && (
+                        <div className="absolute left-0 top-full mt-2  bg-white  border border-[#FF4719] rounded-lg shadow-lg p-4 flex flex-col gap-3 z-50 min-w-[300px]">
+                            <Link 
+                                href="https://app.powerbi.com/groups/me/reports/26decd9c-ef41-4902-835b-4e3635a771b5/ReportSection?experience=power-bi" 
+                                className="flex items-center w-full text-left text-lg font-bold hover:text-[#D03000] gap-2"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => handleDropdownToggle('powerbi')}
+                            >
+                                <Image src={powerbi} alt="powerbi" width={30} height={30} />
+                                <span>PowerBI - Location</span>
+                            </Link>
+                            <Link 
+                                href="https://app.powerbi.com/groups/me/reports/26decd9c-ef41-4902-835b-4e3635a771b5/ReportSection?experience=power-bi" 
+                                className="flex items-center w-full text-left text-lg font-bold hover:text-[#D03000] gap-2"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => handleDropdownToggle('powerbi')}
+                            >
+                                <Image src={powerbi} alt="powerbi" width={30} height={30} />
+                                <span>PowerBI - Performance</span>
+                            </Link>
+                            <Link 
+                                href="https://app.powerbi.com/groups/me/reports/26decd9c-ef41-4902-835b-4e3635a771b5/ReportSection?experience=power-bi" 
+                                className="flex items-center w-full text-left text-lg font-bold hover:text-[#D03000] gap-2"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => handleDropdownToggle('powerbi')}
+                            >
+                                <Image src={powerbi} alt="powerbi" width={30} height={30} />
+                                <span>PowerBI - Survey</span>
+                            </Link>
+                        </div>
+                    )}
+                </div>
 
             </nav>
-            {activeDropdown === 'powerbi' && (
-               
-                    <div className="absolute right-20 top-16 bg-white border border-gray-300 rounded-lg shadow-lg p-4 pr-10 flex flex-col gap-3 z-50">
-                        <Link 
-                            href="https://app.powerbi.com/groups/me/reports/26decd9c-ef41-4902-835b-4e3635a771b5/ReportSection?experience=power-bi" 
-                            className="flex items-center w-full text-left text-lg font-bold hover:text-[#D03000] gap-2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => handleDropdownToggle('powerbi')}
-                        >
-                            <Image src={powerbi} alt="powerbi" width={30} height={30} />
-
-                            <span >PowerBI - Location</span>
-                        </Link>
-                        <Link 
-                            href="https://app.powerbi.com/groups/me/reports/26decd9c-ef41-4902-835b-4e3635a771b5/ReportSection?experience=power-bi" 
-                            className="flex items-center w-full text-left text-lg font-bold hover:text-[#D03000] gap-2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => handleDropdownToggle('powerbi')}
-                        >
-                            <Image src={powerbi} alt="powerbi" width={30} height={30} />
-
-                            <span >PowerBI - Performance</span>
-                        </Link>
-                        <Link 
-                            href="https://app.powerbi.com/groups/me/reports/26decd9c-ef41-4902-835b-4e3635a771b5/ReportSection?experience=power-bi" 
-                            className="flex items-center w-full text-left text-lg font-bold hover:text-[#D03000] gap-2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => handleDropdownToggle('powerbi')}
-                        >
-                            <Image src={powerbi} alt="powerbi" width={30} height={30} />
-
-                            <span >PowerBI - Survey</span>
-                        </Link>
-                  
-                 
-                </div>
-            )}
+           
             <button className="hidden md:block border-2 border-[#FF4719] p-1 rounded-full" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <Image src={avatar} alt="search" width={30} height={30} className='rounded-full' />
             </button>
