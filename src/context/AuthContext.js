@@ -1,11 +1,10 @@
 "use client"
 import React, { createContext, useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
 
 // Utility function to get a cookie by name
 function getCookie(name) {
-  const value = `; ${document.cookie}`;
-  const parts = value.split(`; ${name}=`);
-  if (parts.length === 2) return parts.pop().split(';').shift();
+  return Cookies.get(name);
 }
 
 const AuthContext = createContext();
@@ -23,15 +22,15 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   const login = (token) => {
-    // Set the token as a cookie
-    document.cookie = `token=${token}; path=/; secure; samesite=strict`;
+    // Set the token as a cookie using js-cookie
+    Cookies.set('token', token, { path: '/', secure: true, sameSite: 'Strict' });
     setAuthToken(token);
     console.log("authToken", authToken);
   };
 
   const logout = () => {
-    // Remove the token cookie by setting its expiration date to the past
-    document.cookie = 'token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    // Remove the token cookie using js-cookie
+    Cookies.remove('token', { path: '/' });
     setAuthToken(null);
   };
 
