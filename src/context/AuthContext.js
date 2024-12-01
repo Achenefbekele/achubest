@@ -23,9 +23,10 @@ const AuthProvider = ({ children }) => {
 
   const login = (token) => {
     // Set the token as a cookie using js-cookie
-    Cookies.set('token', token, { path: '/', secure: true, sameSite: 'Strict' });
+    Cookies.set('token', token, { path: '/', sameSite: 'Lax' });
     setAuthToken(token);
-    console.log("authToken", authToken);
+    console.log("authToken after login", authToken);
+    console.log("Cookies after login", Cookies.get());
   };
 
   const logout = () => {
